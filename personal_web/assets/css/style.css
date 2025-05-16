@@ -76,8 +76,8 @@
 
 
    
-   .skill-tag {
-     padding: 0.5rem 1.2rem;
+    .skill-tag {
+     padding: 0.7rem 1.5rem;
      background: var(--bg-color-secondary);
      border-radius: 25px;
      font-size: 0.9rem;
@@ -85,11 +85,15 @@
      text-align:center ;
      transition: all 0.3s ease;
      border: 1px solid rgba(255,255,255,0.1); /* Adjust border color */
+    
    }
    .skill-tag:hover {
-     transform: scale(1.05);
+
      background: var(--main-color);
      color: white;
+     border: 1px solid var(--orange-yellow-crayola); /* Adjust border color */
+
+
    }
    
 
@@ -105,9 +109,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-
-
-
 
    .SKILL {
     display: grid;
@@ -1979,21 +1980,26 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
-
+.download-cv-wrapper{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
 
 .download-btn {
   display: inline-block;
-  background-color: #e71d1d00;
-  color: var(--white-2);
+  background-color: var(--orange-yellow-crayola);
+  color: #000;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.8s ease-out, transform 0.4s ease-out, border-radius 0.4s ease-out;
 }
 
 .download-btn:hover {
-  background-color: var(--orange-yellow-crayola);
-  color:var( --eerie-black-2);
+  background: linear-gradient(to right, var(--orange-yellow-crayola), #df8f2e);
+  border-radius: 16px;
+  transform: scale(1.03);
 }
 
