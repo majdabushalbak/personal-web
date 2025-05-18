@@ -73,7 +73,10 @@
    * typography
    */
 
-
+  /* #text{
+        width: 80%;
+        font-size: 1.2rem ;
+  } */
 
    
     .skill-tag {
@@ -81,7 +84,7 @@
      background: var(--bg-color-secondary);
      border-radius: 25px;
      font-size: 0.9rem;
-     width: 50%;
+     width: 80%;
      text-align:center ;
      transition: all 0.3s ease;
      border: 1px solid rgba(255,255,255,0.1); /* Adjust border color */
@@ -1877,7 +1880,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-top: 5px;
     right: 0;
     background: var(--orange-yellow-crayola);
-    transition: width 0.3s ease;
+    transition: color 0.3s ease;
     -webkit-transition: width 0.3s ease;
   }
   
