@@ -79,61 +79,45 @@
   } */
 
    
-    .skill-tag {
-     padding: 0.7rem 1.5rem;
-     background: var(--bg-color-secondary);
-     border-radius: 25px;
-     font-size: 0.9rem;
-     width: 80%;
-     text-align:center ;
-     transition: all 0.3s ease;
-     border: 1px solid rgba(255,255,255,0.1); /* Adjust border color */
-    
-   }
-   .skill-tag:hover {
+.skill-tag {
+  padding: 0.7rem 1.5rem;
+  background: var(--bg-color-secondary);
+  border-radius: 25px;
+  font-size: 0.9rem;
+  width: 80%;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-self: center;
+}
 
-     background: var(--main-color);
-     color: white;
-     border: 1px solid var(--orange-yellow-crayola); /* Adjust border color */
+.skill-tag:hover {
+  background: var(--main-color);
+  color: white;
+  border: 1px solid var(--orange-yellow-crayola);
+}
 
+.SKILL {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 1rem;
+}
 
-   }
-   
+.SKILL span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-   .SKILL span:nth-child(3n) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .SKILL span:nth-child(3n-1) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .SKILL span:nth-child(3n-2) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-   .SKILL {
-    display: grid;
-    grid-template-rows: repeat(3,auto);
-    grid-template-columns: repeat(3,1fr);
-
-    gap: 10px;
-   }
+.h3-skills-title {
+  display: block;
+  text-align: start;
+  margin-bottom: 1rem;
+}
 
 
-
-   .SKILL span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-  }
-   
-
-   .h3-skills-title{
-    display: block;
-   }
 
 
   /* font-family */
@@ -1317,7 +1301,31 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
+/* 🔽 Mobile & Tablet Responsive Design */
+@media (max-width: 768px) {
+  .SKILL {
+    grid-template-columns: repeat(2, 1fr);
 
+
+  }
+
+  .skill-tag {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .SKILL {
+    grid-template-columns: 1fr;
+
+
+  }
+
+  .skill-tag {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+}
 
 
 /**
