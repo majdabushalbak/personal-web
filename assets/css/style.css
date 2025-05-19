@@ -115,7 +115,6 @@
 
    .SKILL {
     display: grid;
-    grid-template-rows: repeat(3,auto);
     grid-template-columns: repeat(3,1fr);
 
     gap: 10px;
@@ -133,8 +132,37 @@
 
    .h3-skills-title{
     display: block;
+    text-align: start;
+    margin-bottom: 1rem;
    }
+  
+/* 🔽 Mobile & Tablet Responsive Design */
+@media (max-width: 768px) {
+  .SKILL {
+    grid-template-columns: repeat(2, 1fr);
+  }
+    .h3-skills-title{
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--orange-yellow-crayola);
+    }
 
+  .skill-tag {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .SKILL {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-tag {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+}
 
   /* font-family */
   --ff-poppins: 'Poppins', sans-serif;
