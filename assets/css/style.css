@@ -1805,7 +1805,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
-
+a {
+  display: inline; /* or block if you prefer full-width */
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
 
 
 /**
@@ -1880,6 +1885,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .navbar-link { font-weight: var(--fw-500); }
 
+
+  
 
 
   /**
